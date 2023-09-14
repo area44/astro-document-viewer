@@ -1,0 +1,15 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import Viewer from '@/components/Viewer.astro'
+---
+
+<BaseLayout
+  title="Astro Document Viewer"
+  description="A websites that allows you to view PDF files."
+>
+  <div class="flex justify-center">
+    <Viewer
+      src="https://github.com/AREA44/raw/main/public/compressed.tracemonkey-pldi-09.pdf"
+    />
+  </div>
+</BaseLayout>
