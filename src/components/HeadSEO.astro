@@ -1,5 +1,6 @@
 ---
 import '@/styles/globals.css'
+import '@/styles/fonts.css'
 
 interface Props {
   title?: string | undefined
@@ -10,7 +11,7 @@ interface Props {
 const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 
 if (Astro.props.ogImage === undefined) {
-  Astro.props.ogImage = new URL('og-image.jpg', Astro.url)
+  Astro.props.ogImage = new URL('og-image.webp', Astro.url)
 }
 
 const { title, description, ogImage } = Astro.props
