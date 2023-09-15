@@ -1,6 +1,6 @@
 {
   "name": "@area44/astro-document-viewer",
-  "version": "23.9.14",
+  "version": "23.9.16",
   "description": "A website that allows you to view document files.",
   "author": {
     "name": "AREA44",
@@ -15,12 +15,24 @@
     "start": "astro dev"
   },
   "dependencies": {
+    "@astrojs/react": "^3.0.2",
     "@astrojs/tailwind": "^5.0.0",
-    "astro": "^3.0.13",
+    "@radix-ui/react-slot": "^1.0.2",
+    "astro": "^3.1.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.0.0",
+    "lucide-react": "^0.277.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sharp": "^0.32.5",
+    "tailwind-merge": "^1.14.0",
     "tailwindcss": "^3.3.3",
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@types/node": "^20.5.9",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
     "prettier": "^3.0.3",
     "prettier-plugin-astro": "^0.12.0",
     "prettier-plugin-tailwindcss": "^0.5.4"
