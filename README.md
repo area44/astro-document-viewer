@@ -1,6 +1,6 @@
 # Astro Document Viewer
 
-[![Built with Astro](https://astro.badg.es/v1/built-with-astro/tiny.svg)](https://astro.build)
+[![Built with Astro](https://astro.badg.es/v2/built-with-astro/tiny.svg)](https://astro.build)
 
 A website that allows you to view document files.
 
