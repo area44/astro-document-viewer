@@ -1,32 +1,32 @@
-name: autofix.ci
+# To get started with Astro see: https://docs.astro.build/en/getting-started
+name: Build with Astro
 
 on:
   pull_request:
-  push:
     branches: ['main']
-permissions:
-  contents: read
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 
 jobs:
-  autofix:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v4
 
-      - name: Install PNPM
-        uses: pnpm/action-setup@v4
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
 
       - name: Install dependencies
-        run: pnpm install --no-frozen-lockfile
+        run: pnpm install
 
-      - name: Setup Biome CLI
-        uses: biomejs/setup-biome@v2
-        with:
-          version: latest
-
-      - name: Run Biome
-        run: biome format --write .
-
-      - name: Run autofix.ci
-        uses: autofix-ci/action@v1.3
+      - name: Build with Astro
+        run: pnpm build
