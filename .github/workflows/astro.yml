@@ -1,0 +1,17 @@
+name: Deploy Astro Site
+
+on:
+  push:
+    branches: ['main']
+  pull_request:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    uses: area44/actions-lib/.github/workflows/astro.yml@v0.4.0
+    with:
+      run_deploy: true
