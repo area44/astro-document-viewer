@@ -1,13 +1,15 @@
 // @ts-check
-
 import react from "@astrojs/react";
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "astro/config";
 
+const site = process.env.SITE || "http://localhost:4321";
+const base = process.env.BASE || "/";
+
 // https://astro.build/config
 export default defineConfig({
-  site: "https://area44.github.io",
-  base: process.env.CI ? "/astro-document-viewer/" : undefined,
+  site,
+  base,
   integrations: [react()],
   vite: {
     plugins: [tailwindcss()],
