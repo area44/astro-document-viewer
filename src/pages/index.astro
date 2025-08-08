@@ -5,11 +5,14 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 
 <BaseLayout
   title="Astro Document Viewer"
-  description="A websites that allows you to view PDF files."
+  description="A website that allows you to view PDF files online."
 >
-  <div class="flex justify-center">
+  <section
+    class="flex justify-center px-4 py-8"
+    aria-label="PDF Document Viewer"
+  >
     <Viewer
       src="https://github.com/AREA44/astro-document-viewer/blob/main/public/compressed.tracemonkey-pldi-09.pdf?raw=1"
     />
-  </div>
+  </section>
 </BaseLayout>
