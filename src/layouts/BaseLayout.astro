@@ -4,22 +4,26 @@ import Header from "@/components/Header.astro";
 import HeadSEO from "@/components/HeadSEO.astro";
 
 interface Props {
-  title?: string | undefined;
-  description?: string | undefined;
-  ogImage?: URL | undefined;
+  title?: string;
+  description?: string;
+  ogImage?: URL;
 }
 
 const { title, description, ogImage } = Astro.props;
 ---
 
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
     <HeadSEO title={title} description={description} ogImage={ogImage} />
   </head>
   <body class="bg-background min-h-screen font-sans antialiased">
+    <a href="#main-content" class="sr-only focus:not-sr-only">
+      Skip to main content
+    </a>
+
     <div class="relative flex min-h-screen flex-col">
       <Header />
-      <main class="flex-1">
+      <main id="main-content" role="main" class="flex-1">
         <slot />
       </main>
       <Footer />

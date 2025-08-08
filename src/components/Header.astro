@@ -1,21 +1,24 @@
 ---
 import ThemeToggle from "@/components/ThemeToggle.astro";
-import { buttonVariants } from "@/components/ui/button";
 ---
 
 <header class="bg-background sticky top-0 z-40 w-full border-b">
-  <div
-    class="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0"
-  >
-    <div class="flex gap-6 md:gap-10">
-      <div class="flex items-center space-x-2">
-        <span class="inline-block font-bold">Astro Document Viewer</span>
-      </div>
-    </div>
-    <div class="flex flex-1 items-center justify-end space-x-4">
-      <nav class="flex items-center space-x-1">
-        <ThemeToggle />
-      </nav>
-    </div>
+  <div class="container flex h-16 items-center justify-between">
+    <!-- Left: Logo / Title -->
+    <a 
+      href="/" 
+      class="flex items-center space-x-2 font-bold hover:opacity-80 transition-opacity"
+    >
+      <span>Astro Document Viewer</span>
+    </a>
+
+    <!-- Right: Navigation & Actions -->
+    <nav 
+      class="flex items-center gap-2" 
+      aria-label="Main navigation"
+    >
+      <!-- Additional nav links could go here -->
+      <ThemeToggle />
+    </nav>
   </div>
 </header>
