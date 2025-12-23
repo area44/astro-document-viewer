@@ -1,6 +1,6 @@
 {
   "name": "@area44/astro-document-viewer",
-  "version": "25.08.08",
+  "version": "25.12.23",
   "description": "A website that allows you to view document files.",
   "author": {
     "name": "AREA44",
@@ -26,6 +26,7 @@
     "lucide-react": "^0.562.0",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
+    "shadcn": "^3.6.2",
     "sharp": "^0.34.5",
     "tailwind-merge": "^3.4.0",
     "tailwindcss": "^4.1.18"
