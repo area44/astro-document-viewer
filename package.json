@@ -1,6 +1,6 @@
 {
   "name": "@area44/astro-document-viewer",
-  "version": "25.12.23",
+  "version": "25.12.27",
   "description": "A website that allows you to view document files.",
   "author": {
     "name": "AREA44",
@@ -12,9 +12,9 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "format": "biome format --write .",
-    "lint": "biome lint --write .",
-    "check": "biome check --write ."
+    "format": "biome format --write",
+    "lint": "biome lint --write",
+    "check": "biome check --write"
   },
   "dependencies": {
     "@astrojs/react": "^4.4.2",
@@ -27,16 +27,15 @@
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
     "shadcn": "^3.6.2",
-    "sharp": "^0.34.5",
     "tailwind-merge": "^3.4.0",
-    "tailwindcss": "^4.1.18"
+    "tailwindcss": "^4.1.18",
+    "tw-animate-css": "^1.4.0"
   },
   "devDependencies": {
     "@area44/biome-config": "^2.3.2",
     "@biomejs/biome": "^2.3.10",
     "@types/node": "^24.10.4",
     "@types/react": "^19.2.7",
-    "@types/react-dom": "^19.2.3",
-    "tw-animate-css": "^1.4.0"
+    "@types/react-dom": "^19.2.3"
   }
 }
