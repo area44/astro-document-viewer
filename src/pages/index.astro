@@ -7,12 +7,26 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
   title="Astro Document Viewer"
   description="A website that allows you to view PDF files online."
 >
-  <section
-    class="flex justify-center px-4 py-8"
-    aria-label="PDF Document Viewer"
-  >
-    <Viewer
-      src="https://github.com/AREA44/astro-document-viewer/blob/main/public/compressed.tracemonkey-pldi-09.pdf?raw=1"
-    />
-  </section>
+  <div class="flex flex-1 flex-col">
+    <section class="border-grid">
+      <div class="container-wrapper">
+        <div
+          class="container flex flex-col items-center gap-2 py-8 text-center md:py-16 lg:py-20 xl:gap-4"
+        >
+          <h1
+            class="text-primary leading-tighter text-balance text-4xl font-semibold tracking-tight text-balance lg:leading-[1.1] lg:font-semibold xl:text-5xl xl:tracking-tight max-w-4xl"
+          >
+            Astro Document Viewer
+          </h1>
+        </div>
+      </div>
+    </section>
+    <div class="container-wrapper section-soft flex-1 pb-6">
+      <div class="container overflow-hidden">
+        <Viewer
+          src="https://github.com/AREA44/astro-document-viewer/blob/main/public/compressed.tracemonkey-pldi-09.pdf?raw=1"
+        />
+      </div>
+    </div>
+  </div>
 </BaseLayout>
