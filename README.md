@@ -17,10 +17,10 @@ pnpm dev
 
 Now, you can open your browser and navigate to http://localhost:4321 to see the application running.
 
-To view your document, simply replace the source of the document in the `<Viewer/>` component. For example:
+To view your document, simply replace the source of the document in the `<DocumentViewer/>` component. For example:
 
 ```astro
-<Viewer
+<DocumentViewer
   src="https://github.com/AREA44/astro-document-viewer/blob/main/public/compressed.tracemonkey-pldi-09.pdf?raw=1"
 />
 ```
