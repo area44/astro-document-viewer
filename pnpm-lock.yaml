@@ -18,8 +18,8 @@ importers:
         specifier: ^4.2.1
         version: 4.2.1(vite@7.3.1(@types/node@24.12.0)(jiti@2.6.1)(lightningcss@1.31.1))
       astro:
-        specifier: ^6.0.4
-        version: 6.0.4(@types/node@24.12.0)(jiti@2.6.1)(lightningcss@1.31.1)(rollup@4.53.3)(typescript@5.5.4)
+        specifier: ^6.0.5
+        version: 6.0.5(@types/node@24.12.0)(jiti@2.6.1)(lightningcss@1.31.1)(rollup@4.53.3)(typescript@5.5.4)
       class-variance-authority:
         specifier: ^0.7.1
         version: 0.7.1
@@ -1134,8 +1134,8 @@ packages:
     resolution: {integrity: sha512-6t10qk83GOG8p0vKmaCr8eiilZwO171AvbROMtvvNiwrTly62t+7XkA8RdIIVbpMhCASAsxgAzdRSwh6nw/5Dg==}
     engines: {node: '>=4'}
 
-  astro@6.0.4:
-    resolution: {integrity: sha512-1piLJCPTL/x7AMO2cjVFSTFyRqKuC3W8sSEySCt1aJio+p/wGs5H3K+Xr/rE9ftKtknLUtjxCqCE7/0NsXfGpQ==}
+  astro@6.0.5:
+    resolution: {integrity: sha512-JnLCwaoCaRXIHuIB8yNztJrd7M3hXrHUMAoQmeXtEBKxRu/738REhaCZ1lapjrS9HlpHsWTu3JUXTERB/0PA7g==}
     engines: {node: ^20.19.1 || >=22.12.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -4001,7 +4001,7 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  astro@6.0.4(@types/node@24.12.0)(jiti@2.6.1)(lightningcss@1.31.1)(rollup@4.53.3)(typescript@5.5.4):
+  astro@6.0.5(@types/node@24.12.0)(jiti@2.6.1)(lightningcss@1.31.1)(rollup@4.53.3)(typescript@5.5.4):
     dependencies:
       '@astrojs/compiler': 3.0.0
       '@astrojs/internal-helpers': 0.8.0
